@@ -11,9 +11,9 @@
         "mongodb",
         "pyrogram"
     ],
-    "website": "https://t.me/FA9SH",
-    "repository": "https://github.com/USDDBOT/Shadow",
-    "success_url": "https://t.me/usddshad",
+    "website": "https://t.me/X_A_R0",
+    "repository": "https://github.com/Ammar5002/Shadow",
+    "success_url": "https://t.me/X_A_R1",
     "env": {
         "API_ID": {
             "description": "قم بوضع الايبي ايدي هنا",
@@ -86,7 +86,7 @@
         "UPSTREAM_REPO": {
             "description": "اتركه كما هوا",
             "required": true,
-            "value": "https://github.com/USDDBOT/Shadow"
+            "value": "https://github.com/Ammar5002/Shadow"
         }
     },
     "addons": [],
