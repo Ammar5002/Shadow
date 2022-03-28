@@ -30,26 +30,26 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "• نـصـب بـوتك مـن هـنا •", url="https://t.me/FA9SH/2059",
+                        "• نـصـب بـوتك مـن هـنا •", url="https://t.me/X_A_R3",
                     )
                 ],
                 [InlineKeyboardButton("", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 الاوامر", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ المطور", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("• الاوامر •", callback_data="cbcmds"),
+                    InlineKeyboardButton("• المطور •", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 جروب الدعم", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "• جروب الدعم •", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 قناة البوت", url=f"https://t.me/FA9SH"
+                        "• قناة البوت •", url=f"https://t.me/X_A_R0"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
                         "ضيـف البـوت لمجمـوعتـك ✅",
-                        url=f"https://t.me/USDDBOT?startgroup=true"
+                        url=f"https://t.me/fi0nabot?startgroup=true"
                     )
                 ],
             ]
@@ -92,12 +92,12 @@ async def cbcmds(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👷🏻 اوامر الادمنيه", callback_data="cbadmin"),
-                    InlineKeyboardButton("🧙🏻 اوامر المطور", callback_data="cbsudo"),
+                    InlineKeyboardButton("• اوامر الادمنيه •", callback_data="cbadmin"),
+                    InlineKeyboardButton("• اوامر المطور •", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("📚 اوامر اساسيه", callback_data="cbbasic")
+                    InlineKeyboardButton("• اوامر اساسيه •", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("🔙 رجوع", callback_data="cbstart")
+                    InlineKeyboardButton("• رجوع •", callback_data="cbstart")
                 ],
             ]
         ),
@@ -108,7 +108,7 @@ async def cbcmds(_, query: CallbackQuery):
 async def cbbasic(_, query: CallbackQuery):
     await query.answer("الاوامر الاساسيه")
     await query.edit_message_text(
-        f"""🏮 الاوامر الاساسيه:
+        f"""✓ الاوامر الاساسيه:
 
 » /play +「اسم الأغنية / رابط」لتشغيل اغنيه في المحادثه الصوتيه
 » /vplay +「اسم الفيديو / رابط 」 لتشغيل الفيديو داخل المكالمة
@@ -123,7 +123,7 @@ async def cbbasic(_, query: CallbackQuery):
 » /alive「اظهار معلومات البوت(في المجموعه)」
 ⚡ قناة البوت @{UPDATES_CHANNEL}""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 رجوع", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("× رجوع", callback_data="cbcmds")]]
         ),
     )
 
@@ -154,7 +154,7 @@ async def cbadmin(_, query: CallbackQuery):
 async def cbsudo(_, query: CallbackQuery):
     await query.answer("اوامر المطور")
     await query.edit_message_text(
-        f"""🏮 هنا اوامر المطور:
+        f"""✓ هنا اوامر المطور:
 
 » /rmw「لحذف جميع الملفات 」
 » /rmd「حذف جميع الملفات المحمله」
@@ -165,7 +165,7 @@ async def cbsudo(_, query: CallbackQuery):
 
 ⚡ قناة البوت @{UPDATES_CHANNEL}""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 رجوع", callback_data="cbcmds")]]
+            [[InlineKeyboardButton(" رجوع", callback_data="cbcmds")]]
         ),
     )
 
